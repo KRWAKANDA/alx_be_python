@@ -14,6 +14,7 @@ def main():
         choice = input("Enter your choice: ").strip()
 
         if choice == '1':
+            # Add an item
             item = input("Enter the item to add: ").strip()
             if item:
                 shopping_list.append(item)
@@ -22,6 +23,7 @@ def main():
                 print("You did not enter a valid item.")
 
         elif choice == '2':
+            # Remove an item
             if not shopping_list:
                 print("Your shopping list is empty. Nothing to remove.")
                 continue
@@ -34,6 +36,7 @@ def main():
                 print(f'"{item}" was not found in your shopping list.')
 
         elif choice == '3':
+            # View the shopping list
             if not shopping_list:
                 print("Your shopping list is empty.")
             else:
@@ -42,6 +45,7 @@ def main():
                     print(f"{index}. {item}")
 
         elif choice == '4':
+            # Exit the program
             print("Goodbye!")
             break
 
